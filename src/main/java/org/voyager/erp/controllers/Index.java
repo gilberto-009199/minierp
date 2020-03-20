@@ -1,4 +1,4 @@
-package org.voyager.enterprise.erp.controllers;
+package org.voyager.erp.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

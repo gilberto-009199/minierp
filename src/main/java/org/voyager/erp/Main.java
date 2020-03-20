@@ -1,4 +1,4 @@
-package org.voyager.enterprise.erp;
+package org.voyager.erp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

@@ -1,4 +1,4 @@
-package org.voyager.enterprise.erp.config;
+package org.voyager.erp.config;
 
 import java.util.Locale;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -11,6 +11,7 @@ import org.springframework.validation.Validator;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
@@ -56,5 +57,22 @@ class ApplicationConfig extends WebMvcConfigurerAdapter  {
         LocalValidatorFactoryBean validator = new LocalValidatorFactoryBean();
         validator.setValidationMessageSource(messageSource() );
         return validator;
+    }
+    
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+    	
+        /*registry.addResourceHandler("/css/**").addResourceLocations("/css/**");
+        registry.addResourceHandler("/img/**").addResourceLocations("/img/**");
+        registry.addResourceHandler("/js/**").addResourceLocations("/js/**");
+        registry.addResourceHandler("/sound/**").addResourceLocations("/sound/**");
+        registry.addResourceHandler("/fonts/**").addResourceLocations("/fonts/**");
+        */
+            registry
+              .addResourceHandler("/resources/**")
+              .addResourceLocations("/resources/"); 
+        
+    	
+    	//registry.addResourceHandler("/resources/templates/**").addResourceLocations("/**");
     }
 }
