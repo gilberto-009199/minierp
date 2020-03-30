@@ -1,0 +1,81 @@
+@import "style.css";
+@import "estrutura.css";
+
+
+#MenuBox{
+    display: grid;
+    grid-template-columns: 265px 265px 265px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    text-align: center;
+}
+#MenuBox .itemmenu{
+    max-width: 182px;
+    min-height: 128px;
+    max-height:150px;
+    border:solid 1px #c3c3c3;
+    margin-left: 10px;
+    margin-right: 8px;
+    margin-top: 22px;
+    padding: 9px 0px 9px 0px;
+    border-radius: 5px;
+    display: block;
+    background-color: #eee;
+    animation: bounceInRight 3s;
+}
+#MenuBox .itemmenu .img{
+    font-size: 3.7em;
+}
+#MenuBox .itemmenu .separator{
+    height: .1rem;
+    border-bottom: 1px solid #d0d0d0;
+    width: 81%;
+}
+#MenuBox .itemmenu .desc{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+#MenuBox .itemmenu:hover{
+    cursor:pointer;
+    background-color:black;
+    color: #0ce8c6;
+    -webkit-box-shadow: 0px 3px 37px -1px rgba(87,87,87,1);
+    -moz-box-shadow: 0px 3px 37px -1px rgba(87,87,87,1);
+    box-shadow: 0px 3px 37px -1px rgba(87,87,87,1);
+}
+#frmLogin{
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-menssagem{
+  background-color: #eee;
+  border-radius: 4px;
+  padding: 2px 17px;
+  box-sizing: border-box;
+  margin: 3px 0px 0px 0px;
+  text-align: center;
+}
+[role="itemmenu"].disable,.itemmenu.disable{
+  opacity: 0.7;
+}
+.checket{
+  text-align: center;
+  border-radius: 2px;
+  color: #6f6c6c;
+  padding: 2px 1px;
+  border: solid 1px #6acc8b;
+  background-color: #fff;
+  transition: all 1s;
+  max-width: 40px;
+  max-height: 41px;
+}
+.checket.action{
+  text-align: center;
+  border-radius: 2px;
+  color: #caff00;
+  padding: 2px 1px;
+  border: solid 1px #6acc8b;
+  background-color: #03f313;
+}
