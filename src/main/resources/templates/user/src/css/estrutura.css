@@ -123,8 +123,10 @@ div[role="main"] nav[role="menu"] div[role="itemmenu"].disable div i{
   background-color:black;
   color:white;
 }
-div[role="main"] nav[role="menu"] div[role="itemmenu"] div a{
+div[role="main"] nav[role="menu"] div[role="itemmenu"] div a,div[role="main"] nav[role="menu"] div[role="itemmenu"] div label{
     line-height: 3;
+    cursor: pointer;
+    color: #006D5C;
 }
 #painel-menu-usuario{
     max-width:400px;

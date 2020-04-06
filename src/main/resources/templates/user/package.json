@@ -29,6 +29,8 @@
     "@fortawesome/react-fontawesome": "^0.1.9",
     "@icon/elegant-icons": "0.0.1-alpha.4",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2"
   }
 }

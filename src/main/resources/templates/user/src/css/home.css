@@ -3,15 +3,18 @@
 
 
 #MenuBox{
-    display: grid;
-    grid-template-columns: 265px 265px 265px;
+    /*display: grid;
+    grid-template-columns: 265px 265px 265px;*/
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
 }
 #MenuBox .itemmenu{
     max-width: 182px;
+    min-width: 120px;
     min-height: 128px;
     max-height:150px;
     border:solid 1px #c3c3c3;
@@ -22,7 +25,9 @@
     border-radius: 5px;
     display: block;
     background-color: #eee;
+    color: #000;
     animation: bounceInRight 3s;
+    flex: 1 1;
 }
 #MenuBox .itemmenu .img{
     font-size: 3.7em;

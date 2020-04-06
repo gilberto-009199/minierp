@@ -35,7 +35,7 @@ module.exports = {
         options: { presets: ["@babel/env"] }
       },
       {
-        test: /\.(woff2?|eot|ttf|otf|svg|png|jpeg|jpg)$/,
+        test: /\.(woff2?|eot|ttf|otf|svg|png|jpeg|jpg|gif)$/,
         loader: 'file-loader',
         options: {
           limit: 10000,
@@ -53,6 +53,9 @@ module.exports = {
     path:path.join(__dirname,'dist'),
     filename:'bundle.js',
     publicPath: 'user/'
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   devtool:'source-map',
   plugins: [new webpack.HotModuleReplacementPlugin()]

@@ -28,7 +28,7 @@ header nav{
     float: left;
     background: initial;
 }
-header nav button{background: transparent;border-style: none;width: 100%;height: auto;overflow: auto;}
+header nav button,header nav button{background: transparent;border-style: none;width: 100%;height: auto;overflow: auto;}
 header nav button .bar{
     width: 100%;
     height: 2px;
@@ -42,14 +42,17 @@ header nav ul li{
 }
 header div.logo{float: left;font-size: 1.3em;margin-left: 10px;color: white;padding: 5px;}
 header form.login{float: right;}
-header form.login button{
-    font-size: 1.2em;
-    padding: 6px 31px;
-    border-radius: 4px;
-    border-style: none;
-    background-color: #ff9016;
-    border: 2px solid #ff9016;
-    outline-color:#f19530;
+header form.login button,header form.login a{
+	display:inline-block;
+	font-size: 1.2em;
+	padding: 6px 31px;
+	border-radius: 4px;
+	border-style: none;
+	background-color: #ff9016;
+	border: 2px solid #ff9016;
+	outline-color:#f19530;
+	text-decoration: none;
+	color:white;
 }
 div[role="main"]{
     background: #fff;
