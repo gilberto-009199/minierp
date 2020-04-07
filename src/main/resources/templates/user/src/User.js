@@ -1,4 +1,5 @@
 import React, { Component} from "react";
+import Alert from "./Alert.js";
 
 import ImageMagnify from "./img/magnify.gif";
 
@@ -8,12 +9,19 @@ class User extends Component{
     constructor(){
         super();
         this.state = {
-            lista:[]
+            lista:[],
+            modal:{
+                show:false
+            }
         };
     }
 
     addUser(){
-
+        this.setState({
+            modal:{
+                show:true
+            }
+        })
     }
 
     render(){
@@ -65,6 +73,9 @@ class User extends Component{
                       </table>
                   </div>
                 </div>
+                <Alert show={this.state.modal.show}>
+                    oi
+                </Alert>
             </>
         )
     }
