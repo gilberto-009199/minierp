@@ -15,12 +15,14 @@ class Alert extends Component{
         }
     }
     close(e){
-
-        if((e.target).is('.container')){
-            
+        e.preventDefault();
+        if($(e.target).is('.container')){
+            console.log("Fechar o container")
+            this.props.onClose();
         }else{
-            
+            console.log("Não fechar")
         }
+        
     }
     
     render(){
@@ -36,8 +38,6 @@ class Alert extends Component{
                     </div>
                     <div className="conteudo-html">
                         {this.props.children}
-                    </div>
-                    <div className="actions">
                     </div>
                 </div>
             </div>

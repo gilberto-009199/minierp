@@ -160,19 +160,18 @@ input[type="text"]:focus,input[type="password"]:focus{
 }
 
 .alert form .content-icon-input span[aria-hidden="true"]{
-    position: relative;
+    /* position: relative; */
     line-height: 1.8;
     margin-right: -20px;
     font-size: 1.3em;
 }
 
 .alert .conteudo-html{
-
-  font-size: 0.7em;
-
-  padding: 4px 8px 1px 8px;
-
-  text-align: center;
+font-size: 0.7em;
+padding: 4px 0px 0px 0px;
+text-align: center;
+height: auto;
+overflow: auto;
 }
 .alert .actions button{
 
@@ -234,12 +233,11 @@ cursor:pointer;
 }
 
 .alert form{
-  padding-bottom: 7px;
+  /* padding-bottom: 7px; */
+  height: auto;
+  overflow: auto;
 }
 
-.alert form button[type="submit"]{
-  display:none;
-}
 
 .alert form input,.alert form .content-icon-input input,.alert form input,.alert form select{
 
