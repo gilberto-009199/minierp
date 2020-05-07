@@ -1,5 +1,5 @@
 # Compilação e execução( Build )
- Utilize o makven para compilar o programa ao final ele vai gera um arquivo jar executavel
+ Utilize o maven para compilar o programa ao final ele vai gera um arquivo jar executavel
 ```
  mvn install
  cd target
