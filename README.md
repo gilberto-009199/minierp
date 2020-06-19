@@ -2,6 +2,8 @@
 
 # Projeto MiniErp
 
+![Tela inicial](./home.png)
+
  A estrutura basica minima de um erp para uma empresa pequena
 
 # Compilação e execução( Build )
