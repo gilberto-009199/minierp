@@ -1,0 +1,115 @@
+.login-container{
+    padding-top: 3vmin;
+    height:auto;
+    min-height: 100vmin;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cadastrar-form.active{
+  max-height:900px;
+  z-index:2;
+}
+.cadastrar-form{
+  transition: max-height 5s;
+  overflow: hidden;
+  max-height: 0px;
+  transition: max-height 2s cubic-bezier(0.89, 0.13, 0.21, 0.65);
+  position:absolute!important;
+  z-index:-1;
+
+}
+.login-form,.cadastrar-form{
+  border-radius: 0.4285rem;
+  position: relative;
+  width: 25vmax;
+  min-width: 248px;
+  max-width: 90vmax;
+
+  padding-bottom: 0.7rem;
+  margin-left:auto;
+  margin-right:auto;
+  display: flex;
+  flex-direction: column;
+  background:#fff;
+}
+.login-form-header{
+  padding: 0 0 100px;
+  overflow: hidden;
+  color:#fff;
+}
+.login-form-header .login-form-titulo{
+    margin-left: 0.1em;
+    text-transform: none;
+    position: relative;
+    font-size: 5em;
+    font-weight: 900;
+    
+    margin-left: -5px;
+    text-indent:4px;
+    z-index: 1;
+}
+.login-form-header img{
+  position: absolute;
+  max-width: 100%;
+  border-radius: 0.2857rem;
+  vertical-align: middle;
+  border-style: none;
+}
+.login-form-body{
+  padding:15px;
+  flex: 1 1 auto;
+}
+.login-form-body .input label{
+  display:none;
+}
+.login-form-body .input{
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+
+}
+.login-form-body .input input{
+  padding: 10px 18px 10px 18px;
+  border-radius: 0.4285rem;
+  border: 1px solid #cad1d7;
+  width:100%;
+  outline:none;
+  outline-style: unset;
+}
+.login-form-footer{
+  background-color: transparent;
+  border: 0;
+  padding: 12px;
+}
+.login-form-footer .btn{
+    font-size: 0.875rem;
+    border-radius: 0.4285rem;
+    padding: 15px 48px;
+    transition: all 0.15s ease;
+    box-shadow: none;
+    color: #ffffff;
+    border-width: 2px;
+    
+    position: relative;
+    overflow: hidden;
+    margin: 4px 1px;
+    display: block;
+    width: 100%;
+}
+.leaft{
+  float:left;
+}
+.right{
+  float:right;
+}
+.login-form-footer .links{
+  padding-top:6px;
+  color: #ff6793;
+  font-size: 0.9em;
+}
+.login-form-footer .links .link{
+  cursor:pointer;
+}

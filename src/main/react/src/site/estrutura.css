@@ -1,0 +1,79 @@
+body{
+    display:block;
+    background:#403C38;
+    height:auto;
+    overflow:auto;
+    padding-top: 54px;
+}
+header{
+    display:block;
+    background:#131212;
+    width:100%;
+    background: #1c2127;
+    min-height:55px;
+    padding: 7px 19px;
+    position: fixed;
+    z-index: 999;
+    top: 0px;
+}
+header nav, header div.logo,header form.login,.user-login-painel{
+    display: inline-block;
+    height: 33px;
+}
+
+header nav{
+    width: 32px;
+    height: 32px;
+    float: left;
+    background: initial;
+}
+header nav button,header nav button{background: transparent;border-style: none;width: 100%;height: auto;overflow: auto;}
+header nav button .bar{
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: white;
+    margin: 7px 0px;
+}
+header nav ul{display: none;}
+header nav ul li{
+
+}
+header div.logo,.user-login-painel{float: left;font-size: 1.3em;margin-left: 10px;color: white;padding: 5px;}
+.user-login-painel{
+
+
+}
+.user-login-painel .desc{
+    display: inline-block;
+    float: left;
+    height: 33px;
+    overflow: hidden;
+    padding: 3px 0px 0px 1px;
+}
+.user-login-painel img{
+    width: 32px;
+    background-color: #eee;
+    border:solid 2px #eee;
+    border-radius: 100px;
+    display: inline-block;
+    float: left;
+}
+header form.login,.user-login-painel{
+	float: right;
+}
+header form.login button,header form.login a{
+	display:inline-block;
+	font-size: 1.2em;
+	padding: 6px 31px;
+	border-radius: 4px;
+	border-style: none;
+	background-color: #ff9016;
+	border: 2px solid #ff9016;
+	outline-color:#f19530;
+	text-decoration: none;
+	color:white;
+}
+div[role="main"]{
+    background: #fff;
+}
