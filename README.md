@@ -4,6 +4,7 @@
 # Projeto MiniErp
 
 ![Tela inicial](./home.png)
+![Tela inicial](https://raw.githubusercontent.com/gilberto-009199/minierp/master/12648fc6522e19f9f7eaac961d698892.webp)
 
  A estrutura basica minima de um erp para uma empresa pequena
 
